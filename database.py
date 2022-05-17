@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS regisseur(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT NOT NULL ,
     last_name TEXT NOT NULL,
-    is_single INTEGER NOT NULL,
+    is_single INTEGER NOT NULL
     
 );
 """
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS regisseur(
 CREATE_TABLE_GENRE = """
 CREATE TABLE IF NOT EXISTS genre (
     id INTEGER PRIMARY KEY AUTONINCREMENT,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE
     );
 """
 
